@@ -1,0 +1,20 @@
+#PYTHON CLASS
+#creation of class
+class myclass:
+    pass
+p = myclass()
+print(p)
+#class method
+class person:
+    def display(self):
+        print("good morning")
+person1 = person()
+person1.display()
+#class _init_ method
+class person:
+    def __init__(self,name):
+        self.name = name
+    def display(self):
+        print("how are you?",self.name)
+person("ragasvi").display()       
+
