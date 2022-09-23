@@ -1,0 +1,20 @@
+#python private properties
+
+class Team:
+    def __init__(self,name):
+        self.__name = name
+    def add_members(self,member):
+        self.member = member
+ output   
+t1 = Team("python")
+t1.add_members("raga")
+t1.member
+'raga'
+
+============ RESTART: D:/Documents/python practice/private class.py ============
+t1 = Team("python")
+t1.name
+Traceback (most recent call last):
+  File "<pyshell#4>", line 1, in <module>
+    t1.name
+AttributeError: 'Team' object has no attribute 'name'
