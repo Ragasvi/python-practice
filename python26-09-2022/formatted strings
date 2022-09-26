@@ -1,0 +1,29 @@
+name = "ragasvi"
+age = 24
+gender = "female"
+print("hii"+name)
+hiiragasvi
+print("hi" + name + "you are" + age + "yearls old")
+Traceback (most recent call last):
+  File "<pyshell#5>", line 1, in <module>
+    print("hi" + name + "you are" + age + "yearls old")
+TypeError: can only concatenate str (not "int") to str
+print("hi" + name + "you are" + str(age) + "yearls old")
+hiragasviyou are24yearls old
+#creating formatted strings using string variables
+name = "ragasvi"
+print("hello %s" %name)
+hello ragasvi
+##passing multiple variables in formatted strings
+print ("hello %s your are studying in %s" %(name,college))
+hello ragasvi your are studying in narayana jr college
+fruit = "apple"
+price = 20
+print("the price of an %s is %d" %(fruit,price))
+the price of an apple is 20
+##formatted string with collection types
+food = ["biryani",500,"paradise"]
+print("i love %s which is %d rupess in restaurant %s" %(food[0],food[1],food[2]))
+i love biryani which is 500 rupess in restaurant paradise
+
+
