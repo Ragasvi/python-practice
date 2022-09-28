@@ -1,0 +1,37 @@
+#python math
+#built-in-math function - max(),min(),abs()- absolute positive value,pow()
+
+a = min(5,19,35)
+b = max(45,33,100)
+
+print("the minimum value in a = " , a)
+print("the maximum value in b = " , b)
+
+#absolute positive value(abs())
+c = abs(-99.45)
+print("the absolute positive of c = " ,c)
+
+#power of value
+d = pow(7,4) #(7*7*7*7)
+print("the power of d = " ,d)
+#math module
+import math
+x = math.sqrt(775)
+print("squareroot of x =" , x)
+
+#math.ceil() this method rounds a number upwards to its nearest integer
+
+import math
+x = math.ceil(1.2)
+print("the upward  to nearest inetger  = " ,x) 
+#math.floor() this method rounds a numbers downwards to its nearest integer
+
+import math
+y = math.floor(1.2)
+print("the downward to nearest integer = ",y)
+
+#math.pi constant returns the value of pi(3.14)
+import math
+x = math.pi
+print(x)
+
