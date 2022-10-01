@@ -1,0 +1,14 @@
+# user input
+#input() -ask user for input
+
+'''username = input("enter username : ")
+print("username is :" +username)'''
+
+#we csn add interger also
+
+'''number = int(input("enter the number :"))
+print("the number is : ",number)'''
+
+
+number = float(input("enter float number :"))
+print("the float number is : ",number)
