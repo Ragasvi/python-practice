@@ -1,0 +1,67 @@
+#encapsulation - in python we can restrict the acces to variables and methods is calles
+#encapsulation
+#program with private method
+
+'''class car:
+    def __init__(self):
+        self.__updatesoftware() #__updatesoftware is a private method as it was with underscore
+    def drive(self):
+        print("driving")
+    def __updatesoftware(self):
+        print("updating software")
+blackcar = car()
+blackcar.drive()
+blackcar.__updatesoftware()'''
+
+
+'''class car:
+    #def __init__(self):
+        #self.__updatesoftware() #__updatesoftware is a private method as it was with underscore
+    def drive(self):
+        print("driving")
+    def __updatesoftware(self):
+        print("updating software")
+blackcar = car()
+blackcar.drive()
+blackcar.__updatesoftware()'''
+
+#private variables
+
+'''class car:
+    __maxspeed = 0
+    __name = ""
+    def __init__(self):
+        self.__maxspeed = 200
+        self.__name = "supercar"
+    def drive(self):
+        print("driving")
+        print(self.__maxspeed)
+    def setspeed(self,speed):
+        self.__maxspeed = speed
+        print(self.__maxspeed)
+        
+redcar = car()
+redcar.drive()
+redcar.setspeed(150)'''
+
+# declaring private variable outside the class
+class car:
+    __maxspeed = 0
+    __name = ""
+    def __init__(self):
+        self.__maxspeed = 200
+        self.__name = "supercar"
+    def drive(self):
+        print("driving")
+        print(self.__maxspeed)
+   
+redcar = car()
+redcar.drive()
+redcar.__maxspeed = 150
+redcar.drive()
+
+
+        
+
+
+        
