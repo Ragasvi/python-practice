@@ -1,0 +1,39 @@
+#class creation
+class person:
+    def __init__(self):
+        self.name = 'ragasvi'
+        self.gender = 'female'
+        self.age = 24
+    def talk(self):
+        print("hi i'am ",self.name)
+    def vote(self):
+        if self.age < 18:
+            print("iam not eligible to vote")
+        else:
+            print("iam eligible to vote")
+obj = person()
+obj.talk()
+obj.vote()
+#creating class using own credentials
+
+class person:
+    def __init__(self,n,g,a):
+        self.name = n
+        self.gender = g
+        self.age = a
+    def talk(self):
+        print("hi i'am ",self.name)
+    def vote(self):
+        if self.age < 18:
+            print("iam not eligible to vote")
+        else:
+            print("iam eligible to vote")
+obj1 = person('ammu','female',16)
+obj2 = person('harish','male',25)
+print("//name:",obj1.name,"//gender:",obj1.gender,"//age:",obj1.age)
+print("//name:",obj2.name,"//gender:",obj2.gender,"//age:",obj2.age)
+obj1.talk()
+obj1.vote()
+obj2.talk()
+obj2.vote()
+
