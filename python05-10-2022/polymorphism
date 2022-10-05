@@ -1,0 +1,34 @@
+#class
+#polymorphism - it is using a same function in multiple ways
+
+class vechile:
+    def __init__(self,name):
+        self.name = name
+class car(vechile):
+    def speed(self):
+        print("the speed of",self.name,"is",100)
+class bike(vechile):
+    def speed(self):
+        print("the speed of",self.name,"is",200)
+
+a = [car("audi"),bike("glamour")]
+for i in a:
+    print(i.name+" : ",end="")
+    i.speed()
+
+#example of polymorphism
+
+class cat:
+    def sound(self):
+        print("the cat says meowmeow")
+class dog:
+    def sound(self):
+        print("the dog says bowbow")
+def makesound(animaltype):
+    animaltype.sound()
+    
+a = cat()
+b = dog()
+makesound(a)
+makesound(b)
+  
