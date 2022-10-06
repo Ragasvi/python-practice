@@ -1,5 +1,5 @@
 #class
-#polymorphism - it is using a same function in multiple ways
+#polymorphism - polymorphism means using a same function in multiple ways
 
 class vechile:
     def __init__(self,name):
@@ -16,8 +16,9 @@ for i in a:
     print(i.name+" : ",end="")
     i.speed()
 
-#example of polymorphism
 
+
+#example of polymorphism
 class cat:
     def sound(self):
         print("the cat says meowmeow")
