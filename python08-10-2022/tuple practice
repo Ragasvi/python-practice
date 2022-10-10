@@ -1,0 +1,37 @@
+#tuple
+'''
+t = (1,23,4455,'hello')
+print(t)
+
+u = t,("how","are","you")
+print(u)
+
+p = ([1,2,3],{1,2,3},(1,2,3))
+print(p)
+'''
+'''
+#(a,b,c,d)= l
+#print(l)
+1234,1234,455 == t
+print(t)
+'''
+'''
+#d = {1:'raga',2:'svi',3:'ammu'}
+#d[1]
+#dict({1:123,2:123,3:123})
+
+
+
+knights = {'gallahad': 'the pure', 'robin': 'the brave'}
+for k in knights.items():
+    print(k)
+
+
+knights = {'gallahad': 'the pure', 'robin': 'the brave'}
+for k, v in knights.items():
+    print(k, v)
+'''
+
+string1, string2, string3 = '', 'Trondheim', 'Hammer Dance'
+non_null = string1 or string2 or string3
+print(non_null)        
