@@ -1,0 +1,30 @@
+#local scope
+def square(value):
+    result = value ** 2
+    print(f'The square of {value} is: {result}')
+
+square(10)
+
+
+def cube(value):
+    result = value ** 2
+    print(f'The cube of {value} is: {result}')
+
+cube(10)
+
+
+#enclosing scope or non local scope
+
+def students():
+# this block is local scope
+    count = 100   # non local variable
+    def name_count():  # enclosing scope
+        print(f"print the count from name_count():{count}")
+
+
+    name_count()
+    print(f"print count from students():{count}")
+
+students()
+name_count()
+
