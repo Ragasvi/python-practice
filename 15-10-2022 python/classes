@@ -1,0 +1,54 @@
+#class attribute references
+# class A:
+#     a = 'hello'
+#     i = 12344
+#
+# print(A.i,A.a)
+# #class instantiation
+# class B:
+#     def __init__(self, name,age):
+#         self.n = name
+#         self.a = age
+
+
+# b = B('raga',24)
+# print(b.n,b.a)
+#
+# class Complex:
+#     def __init__(self, realpart, imagpart):
+#         self.r = realpart
+#         self.i = imagpart
+#
+# x = Complex(3.0, -4.5)
+# print(x.r, x.i)
+#
+# class dog:
+#     species = 'Canis familiaris'
+#
+#     def __init__(self,name,age):
+#         self.name= name
+#         self.age = age
+#     def __str__(self):#description(self):
+#         return f"{self.name} is {self.age} years old"
+#     def speak(self,sound):
+#         return f"{self.name} says {sound}"
+#
+# rocky = dog('rocky',4)
+# #print(rocky.description())
+# print(rocky)
+# print(rocky.speak('bow bow'))
+#
+#
+#
+# class car:
+#     def __init__(self,color,mileage):
+#         self.color = color
+#         self.mileage =mileage
+#
+#     #def __str__(self):
+#         #return f"the {self.color} car has {self.mileage} miles"
+#
+# c1 = car('blue',20000)
+# #print(c1)
+# c2 = car('red',30000)
+# #print(c2)
