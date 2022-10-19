@@ -1,0 +1,240 @@
+ class crow:
+#     def fly(self):
+#         print('flying')
+#
+# class sparrow:
+#     def fly(self):
+#         print("eating")
+#         print('flying')
+#
+# class A:
+#     def animal(self,bird):
+#         bird.fly()
+#
+# #bird = crow()
+# bird = sparrow()
+# b1= A()
+#b1.animal(bird)
+
+# class A:
+#     def sum(self,a = None,b = Nonc = None):
+#         if a!= None and b!=None and c!=None:
+#             s = a+b+c
+#         elif a!=None and b!=None:
+#             s = a+b
+#         else:
+#             print('hio')
+#
+#         return s
+# s1 = A()
+# print(s1.sum())
+# #
+# print(s1.sum(1,2))
+# class student:
+#     pass
+#
+# amu = student()
+# amu.name = 'ragasvi'
+# amu.rollno = 21
+#
+# print(amu.name,amu.rollno)
+# print(student.name)
+
+# class student:
+#     def stu(self):
+#         pass
+#
+# print(student)
+# print(student.)
+
+
+# class cal:
+#     def add(self,*args):
+#         result =0
+#         for param in args:
+#             result += param
+#             print('result :{}'.format(result))
+#
+# c1 = cal()
+# c1.add(10,20,30)
+# c1.add(10,20)
+#duck typing
+# class idle:
+#     def execute(self):
+#         print("hiii this is idle")
+#
+# class pycharm:
+#     def execute(self):
+#         print('hii this is pycharm')
+# class program:
+#     def code(self,b):
+#         b.execute()
+#
+# #b = pycharm()
+# b = idle()
+# a = program()
+# a.code(b)
+
+#operator overloading
+
+# a ='4'
+# b = '3'
+# print(a+b)
+# print(str.__add__(a,b))
+# class student:
+#     def __init__(self,m1,m2):
+#         self.m1 = m1
+#         self.m2 = m2
+#     def __add__(self, other):
+#         m1 = self.m1 + other.m2
+#         m2 = self.m2 + other.m2
+#         s3 = student(m1,m2)
+#         return s3
+#     def __gt__(self, other):
+#         r1 = self.m1 + self.m2
+#         r2 =  other.m1 + other.m2
+#         if r1 >r2:
+#             return True
+#         else:
+#             return False
+#
+# s1 = student(58,69)
+# s2 = student(69,65)
+# s3 = s1 + s2
+# print(s3.m1,s3.m2)
+#
+# if s1 > s2:
+#     print('s1 wins')
+# else:
+#     print('s2 wins')
+
+#method overloading
+# class student:
+#     def __init__(self,m1,m2):
+#         self.m1 = m1
+#         self.m2 = m2
+#     def sum(self,a = None,b = None,c = None):
+#         if a != None and b!= None and c!=None:
+#             s = a+b+c
+#         elif a!= None and b!= None:
+#             s =a+b
+#         else:
+#             s = a
+#
+#         return s
+#
+# s1 = student(21,23)
+# print(s1.sum(2))
+
+# method overridding
+# class A:
+#     def show(self):
+#         print('in A show')
+# class B(A):
+#     def show(self):
+#         print('in B show')
+#
+# a1 = B()
+# a1.show()
+
+#encapsulation = we can restrict to the acces to the variables and methods this is called encapsulation
+
+# class car:
+#     def __init__(self):
+#         self.__update_software()
+#
+#     def speed(self):
+#         print('the speed of car is 100kmh')
+#
+#     def __update_software(self):
+#         print('updating software')
+#
+# a = car()
+# a.speed()
+# #a.__update_software()  this is a private method we cannot acces private method outside the classs
+#private variables can modify only inside the class
+# class car:
+#     __maxspeed = 0
+#     __name = ''
+#     def __init__(self):
+#         self.__maxspeed = 200
+#         self.__name = 'baleno'
+#     def drive(self):
+#         print('driving')
+#         print(self.__maxspeed)
+#     # def setspeed(self,speed):
+#     #     self.__maxspeed = speed
+#     #     print(self.__maxspeed)
+#     def setname(self,n):
+#         self.__name = n
+#         print(self.__name)
+#     def getname(self):
+#         self.__name = 'swift'
+#         print(self.__name)
+#
+# a = car()
+# a.drive()
+# #a.setspeed(300)
+# a.setname('verna')
+# a.__maxspeed = 400
+# a.drive()
+# a.getname()
+#
+# class student:
+#     school = 'narayana'
+#     def __init__(self,m1,m2,m3):
+#         self.m1 = m1
+#         self.m2 = m2
+#         self.m3 = m3
+#     def avg(self):
+#         return (self.m1+self.m2+self.m3)/3
+#
+#     def get_m1(self):
+#         return self.m1
+#     def set_m1(self,value):
+#         self.m1 = value
+#     @classmethod  #decorators
+#     def info(cls):
+#         return cls.school
+#     @staticmethod
+#     def info_1():
+#         print('this is student class')
+#
+#
+#
+# s1 = student(21,31,41)
+# s2 = student(51,61,71)
+# print(s1.avg())
+# print(s2.avg())
+# print(student.info())
+# print(s1.info())
+# #print(s1.school)
+# student.info_1()
+# s1.info_1()
+# class complex:
+#     def __init__(self,rpart,ipart):
+#         self.r = rpart
+#         self.i = ipart
+#
+# x = complex(32,45)
+# print(x.r,x.i)
+# x.counter = 1
+# while x.counter <10:
+#     x.counter = x.counter *2
+# print(x.counter)
+# del x.counter
+# #print(x.counter)
+
+# class MyClass:
+#     """A simple example class"""
+#     i = 12345
+#
+#     def f(self):
+#         return 'hello world'
+#
+# x = MyClass()
+# x.f()
+# xf = x.f
+# while True:
+#     print(xf())
+
