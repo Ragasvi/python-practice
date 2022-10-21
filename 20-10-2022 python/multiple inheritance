@@ -1,0 +1,53 @@
+ class father:
+#     def __init__(self,fname):
+#         self.fname = fname
+#         print('father name is',self.fname)
+#     def role(self,occu):
+#         self.occu = occu
+#         print('fathers ocuupation is',self.occu)
+#
+# class mother:
+#     def __init__(self,mname):
+#         self.mname = mname
+#         print('mother name is ',self.mname)
+#     def role(self,occu):
+#         self.occu = occu
+#         print('mothers ocuupation is',self.occu)
+#
+# class son(father,mother):
+#     def __init__(self,sname):
+#         #super().__init__(sname)
+#         self.sname = sname
+#         print('sons name is',self.sname)
+#
+#     def role(self,occu):
+#         self.occu = occu
+#         print('sons occupation is',self.occu)
+#         super().role('officer')
+#         super().__init__('krishna')
+#         mother('swathi').role('housemaker')
+#
+# a = son('harish')
+# a.role('student')
+# #a = father('krishna')
+# #a.role('officer')
+# print(a.__class__.__mro__)
+#
+# Python Program to depict multiple inheritance
+# when every class defines the same method
+
+class Class1:
+    def m(self):
+        print("In Class1")
+
+class Class2(Class1):
+    def m(self):
+        print("In Class2")
+        super().m()
+
+class Class3(Class1):
+    def m(self):
+        print("In Class3")
+        super().m()
+
+class Class4(Class2, Class3):
